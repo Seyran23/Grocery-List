@@ -1,0 +1,86 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    font-family: 'Dancing Script', cursive;
+}
+
+body {
+    background-color: orange;
+
+    display: flex;
+    justify-content: center;
+}
+
+.list_container {
+    height: 100vh;
+    width: 50%;
+    padding: 30px 65px;
+    background-color: white;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 50px;
+
+    font-size: 35px;
+
+    user-select: none;
+}
+
+.grocery_title {
+    text-align: center;
+}
+
+.input_container {
+    width: 90%;
+    display: flex;
+    align-items: center;
+}
+
+.pencil_img {
+    width: 40px;
+}
+
+.grocery_item_input {
+    width: 90%;
+
+    font-size: 35px;
+
+    border: none;
+    border-bottom: 3px solid black;
+    outline: none;
+}
+
+.list_items_container {
+    align-self: flex-start;
+
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.list_item {
+    cursor: text;
+}
+
+
+@media (max-width:650px) {
+
+
+    .grocery_title {
+        font-size: 3.5rem;
+    }
+
+    .pencil_img {
+        width: 30px;
+        height: 30px;
+    }
+
+    .container {
+        font-size: 2rem;
+    }
+}
